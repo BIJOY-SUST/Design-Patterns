@@ -64,19 +64,19 @@ class Movie implements Outputable{
     Double imdb_rating;
 
     Movie(){}
-    //Movie(String name, String director, int runtime, double imdb_rating){
-    //    this.name = name;
-    //    this.runtime = runtime;
-    //    this.director = director;
-    //    this.imdb_rating = imdb_rating;
-    //}
-
-    void show(){
-        System.out.println("name: " + name);
-        System.out.println("director: " + director);
-        System.out.println("runtime: " + runtime);
-        System.out.println("imdb_rating: " + imdb_rating);
+    Movie(String name, String director, int runtime, double imdb_rating){
+        this.name = name;
+        this.runtime = runtime;
+        this.director = director;
+        this.imdb_rating = imdb_rating;
     }
+
+    //void show(){
+    //    System.out.println("name: " + name);
+    //    System.out.println("director: " + director);
+    //    System.out.println("runtime: " + runtime);
+    //    System.out.println("imdb_rating: " + imdb_rating);
+    //}
 
     public ArrayList<_variable>get_info(){
         ArrayList<_variable>info = new ArrayList<>();
